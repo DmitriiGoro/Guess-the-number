@@ -15,12 +15,10 @@ export class GameForm {
 
     this.container.innerHTML = "";
     this.container.append(this.element);
-    console.log(this.number);
   }
 
   initializeNumber() {
     this.number = Math.round(Math.random() * (this.to - this.from) + this.from);
-    console.log(this.to, this.from);
   }
 
   restart() {
