@@ -55,8 +55,8 @@ export class GameForm {
     button.onclick = (event) => {
       event.preventDefault();
 
-      this.from = fromInput.value;
-      this.to = toInput.value;
+      this.from = Number(fromInput.value);
+      this.to = Number(toInput.value);
       this.render();
     };
 
